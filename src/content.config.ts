@@ -14,6 +14,7 @@ const list = defineCollection({
         z.object({
             id: z.number(),
             name: z.string(),
+            fa: z.string(),
             list: itemSchema.optional(),
             subTitle: z.array(z.object({
                 name: z.string(),
